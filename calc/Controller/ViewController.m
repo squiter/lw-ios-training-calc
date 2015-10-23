@@ -10,6 +10,8 @@
 
 @interface ViewController ()
 
+@property (nonatomic, weak) IBOutlet  UILabel *result;
+
 @end
 
 @implementation ViewController
@@ -22,6 +24,11 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)append:(id)sender
+{
+    self.result.text = [self.result.text stringByAppendingString:@"teste"];
 }
 
 @end
