@@ -10,7 +10,9 @@
 
 @interface ViewController ()
 
-@property (nonatomic, weak) IBOutlet  UILabel *result;
+@property (nonatomic, weak) IBOutlet UILabel *result_label;
+@property (nonatomic) NSInteger firstToCalc;
+@property (nonatomic) NSInteger secondToCalc;
 
 @end
 
@@ -26,9 +28,22 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)append:(id)sender
-{
-    self.result.text = [self.result.text stringByAppendingString:@"teste"];
+
+# pragma mark - IBactions
+
+- (IBAction)append:(UIButton *)sender {
+    NSNumber *button = 	@(sender.tag);
+    
+    if (sender.tag >= 0) {
+        self.result_label.text = [self.result_label.text stringByAppendingString:button.stringValue];
+    }
 }
+
+
+- (IBAction)prepareSum:(id)sender {
+    self.firstToCalc = (NSInteger)self.result_label.text;
+    self.result_label.text = nil;
+}
+
 
 @end
