@@ -13,7 +13,7 @@
 		8143AE321BDA4E15005C251B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8143AE271BDA4E15005C251B /* ViewController.m */; };
 		8143AE331BDA4E15005C251B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8143AE291BDA4E15005C251B /* Assets.xcassets */; };
 		8143AE341BDA4E15005C251B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8143AE2A1BDA4E15005C251B /* LaunchScreen.storyboard */; };
-		8143AE351BDA4E15005C251B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8143AE2C1BDA4E15005C251B /* Main.storyboard */; };
+		8143AE351BDA4E15005C251B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8143AE2C1BDA4E15005C251B /* Main.storyboard */; settings = {ASSET_TAGS = (1, ); }; };
 		8143AE371BDA4E15005C251B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8143AE301BDA4E15005C251B /* main.m */; };
 /* End PBXBuildFile section */
 
@@ -226,6 +226,9 @@
 		8143ADE41BDA4D84005C251B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					1,
+				);
 				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = "Treinamento Mobile";
 				TargetAttributes = {
